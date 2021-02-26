@@ -1,0 +1,57 @@
+.todos .todos__content {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+.todos .todos__head {
+    display: grid;
+    margin-top: 1rem;
+    text-align: center;
+    background-color: #34495e;
+    color: #fff;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+    grid-template-columns: 10% 75% 15%;
+}
+.todos .todos__head div {
+    padding: 10px;
+    cursor: pointer;
+}
+.todos .todos__head div:first-child, .todos .todos__head div:nth-child(2) {
+    border-right: 1px solid #fff;
+}
+.todos .todos__search {
+    position: relative;
+}
+.todos .todos__search .todos__search-icon {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+} 
+.todos .todos__search input {
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+.todos .todos__search input:focus {
+    border: 2px solid #2ecc71;
+}
+.todos .todos__no-match {
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+
+}
+@media (max-width: 425px) {
+    .todos .todos__head {
+        font-size: 12px;
+    }
+    .todos .todos__head div {
+        padding: 10px 5px;
+    }
+}
